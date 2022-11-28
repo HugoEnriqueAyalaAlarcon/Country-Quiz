@@ -45,8 +45,6 @@ function paisesAlatorios (){
 };
 
 function impirmeEnBtn (pais , tipoPregunta){
-    console.log(conta);
-    console.log(indexRespuesta);
     let tipoPreguntaTexto=pais.name.official;
     let bandera = pais.flag;
     if (indexRespuesta == conta){
@@ -87,6 +85,25 @@ function funcionResultado (){
     funcionBtnRerultado( );
 }
 ///////
+function funcionBtn(indexBtn ,indexRespuesta  , conta){
+    conta = 0;
+    if(indexBtn == indexRespuesta){
+        btn[indexBtn].style.backgroundColor = "green";
+        aciertos++;
+    }
+    if(indexBtn != indexRespuesta){
+        btn[indexRespuesta].style.backgroundColor = "green";
+        btn[indexBtn].style.backgroundColor = "red";
+    }
+    btn[4].disabled = false;
+    if (btn[4].disabled == false){
+        while (conta < 4){
+            btn[conta].disabled = true;
+            conta++;
+        }
+    }
+}
+
 
 /////////////
 funcionMain();
