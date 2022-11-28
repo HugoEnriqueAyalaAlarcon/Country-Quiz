@@ -102,7 +102,8 @@ function funcionBtn(indexBtn ,indexRespuesta  , conta){
             conta++;
         }
     }
-}
+    return aciertos;
+};
 
 
 /////////////
