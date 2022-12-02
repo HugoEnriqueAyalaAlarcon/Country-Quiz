@@ -17,6 +17,7 @@ body {
     -webkit-border-radius: 28;
     -moz-border-radius: 28;
     border-radius: 28px;
+    background-color: orange;
     background-image: linear-gradient(to bottom, orange, rgb(198, 130, 3));
     border: 1px solid orange;
     color: #ffffff;
